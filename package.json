@@ -1,0 +1,39 @@
+{
+  "name": "cthulhu",
+  "version": "0.1.0",
+  "description": "Reactive character sheet for Call of Cthulu Pen And Paper RGP, 7th edition",
+  "main": "app.jsx",
+  "scripts": {
+    "test": "ctesth",
+    "start": "npm run serve | npm run dev",
+    "serve": "./node_modules/.bin/http-server -p 8080",
+    "dev": "webpack-dev-server --progress --colors --port 8090"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olemak/cthulhu-sheet.git"
+  },
+  "keywords": [
+    "react",
+    "cthulhu",
+    "CoC",
+    "webpack",
+    "roleplaying",
+    "RPG"
+  ],
+  "author": "Ole Martin Kristiansen",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/olemak/cthulhu-sheet/issues"
+  },
+  "homepage": "https://github.com/olemak/cthulhu-sheet#readme",
+  "dependencies": {
+    "react": "^15.2.0"
+  },
+  "devDependencies": {
+    "jsx-loader": "^0.13.2",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1",
+    "http-server": "~0.7.1"
+  }
+}
