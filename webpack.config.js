@@ -9,9 +9,16 @@ module.exports = {
 			{
 				test: /\.jsx$/,
 				loader: 'jsx-loader?insertPragma=React.DOM&harmony'
-			}
+			},
+			{
+	        	test: /\.scss$/,
+	        	loaders: ["style", "css", "sass"]
+	      }
 		]
 	},
+	sassLoader: {
+//		includePaths: [path.resolve(__dirname, "./scss")]
+	 },
 	externals: {
 //		'react': 'React'
 	},

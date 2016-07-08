@@ -52,6 +52,6 @@ var occupations = {
 	}
 };
 
-export {occupations}
+//export {occupations}
 
 

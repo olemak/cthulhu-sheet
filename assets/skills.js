@@ -99,4 +99,4 @@ const skills = {
 	zoology:		{	name: "Zoology",		 			value: 1,			type: "science"						}	
 };
 
-export {skills};
+//export skills;

@@ -31,9 +31,13 @@
     "react": "^15.2.0"
   },
   "devDependencies": {
+    "css-loader": "^0.23.1",
+    "http-server": "~0.7.1",
     "jsx-loader": "^0.13.2",
+    "node-sass": "^3.8.0",
+    "sass-loader": "^4.0.0",
+    "style-loader": "^0.13.1",
     "webpack": "^1.13.1",
-    "webpack-dev-server": "^1.14.1",
-    "http-server": "~0.7.1"
+    "webpack-dev-server": "^1.14.1"
   }
 }
