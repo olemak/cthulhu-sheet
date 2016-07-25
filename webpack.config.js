@@ -22,6 +22,7 @@ module.exports = {
 	externals: {
 //		'react': 'React'
 	},
+	devtool: "inline-source-map",	
 	resolve: {
 		extensions: ['', '.js', '.jsx']
 	}
