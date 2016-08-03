@@ -2,6 +2,7 @@
 'use strict'
 var React = require('react')
 var SkillList = require('./skillList')
+var CharacterDetails = require('./characterDetails')
 
 module.exports = React.createClass({
 	getInitialState: function(){
@@ -10,9 +11,25 @@ module.exports = React.createClass({
 			character: {
 				name: "Tex Arcana",
 				age: 27,
-				sanityLost: 0,
-				sanityGained: 0,
-				occupation: "archeologist",
+				occupation: "Archaist",
+				sex: "Male",
+				residence: "Devil's Gulch, Arkansas",
+				birthplace: "Santa Fe",
+				player: "Ole Martin Kristiansen",
+				counters: {
+					hitPoints: 8,
+					luck: 30,
+					magic: 5,
+					sanity: 40
+				},
+				health: {
+					majorWound: false,
+					hitPoints: 8,
+					sanity: 40,
+					luck: 30,
+					magic: 5,
+					mythos: 0		
+				},
 				stats: {
 					STR: 65,
 					CON: 50,
@@ -33,10 +50,8 @@ module.exports = React.createClass({
 		}
 	},
     render: function(){
-    console.log(this.state.character.stats)
         return <div>
-        			<h1>Sheet</h1>
-        			<h3>Skills</h3>
+	        		<CharacterDetails character={this.state.character} />
        				<SkillList skillList={this.state.statics.skills} characterStats={this.state.character.stats} characterSkills={this.state.character.skills} />
         		</div>
 	}

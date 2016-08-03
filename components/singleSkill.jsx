@@ -21,7 +21,7 @@ module.exports = React.createClass({
     	var dataSkillOutput = {"skill": this.props.skillData.name,"values": [skillValue, skillValue/2, skillValue/5]}
     	return <div className={this.props.className} data-skill={dataSkillOutput}>
     			<input type="checkbox" />
-    			<h4 className="skillName">{this.props.skillData.name}</h4>
+    			<h4 className="name">{this.props.skillData.name}</h4>
 	    		<div className="full">{Math.min(skillValue, 99)}</div>
 	    			<div className={(skillValue < 2 ? "partialValues nil":"partialValues")}>
 	    				<div className={(skillValue < 2 ? "half nil":"half")}>{(Math.floor(skillValue/2) > 1 ? Math.floor(skillValue/2): "-")}</div>
