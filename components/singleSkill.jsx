@@ -1,12 +1,15 @@
 /** @jsx ReactDOM */
 'use strict'
-var React = require('react')
-module.exports = React.createClass({
+//let React = require('react')
+
+
+let SingleSkill = React.createClass({
 	propTypes: {
 		skillData: React.PropTypes.object,
 		charStats: React.PropTypes.object,
 		improvement: React.PropTypes.array
 	},
+
 	computeSkillValue: function() {	
 		let skillValue = this.props.skillData.value
 		let baseSkillId = this.props.skillData.id
@@ -16,11 +19,12 @@ module.exports = React.createClass({
 		})
 		return skillValue
 	},
+
     render: function(){
-    	var skillValue = this.computeSkillValue()
-    	var dataSkillOutput = {"skill": this.props.skillData.name,"values": [skillValue, skillValue/2, skillValue/5]}
+    	let skillValue = this.computeSkillValue()
+    	let dataSkillOutput = {"skill": this.props.skillData.name,"values": [skillValue, skillValue/2, skillValue/5]}
     	return <div className={this.props.className} data-skill={dataSkillOutput}>
-    			<input type="checkbox" />
+    			<input type="checkbox" name={this.props.skillData.id} />
     			<h4 className="name">{this.props.skillData.name}</h4>
 	    		<div className="full">{Math.min(skillValue, 99)}</div>
 	    			<div className={(skillValue < 2 ? "partialValues nil":"partialValues")}>
@@ -30,3 +34,6 @@ module.exports = React.createClass({
     		</div>
     }
 })
+
+
+module.exports = SingleSkill

@@ -85,18 +85,18 @@
 		{ "id": "survivalArctic",		"name": "Survival: Arctic", 		"value": 10,		"type": "survival"					},
 		{ "id": "sword",				"name": "Sword", 					"value": 20,		"type": "fighting"					},
 		{ "id": "swim", 				"name": "Swim",						"value": 20												},
-		{ "id": "throw",				"name": "Throw",					"value": 20												},
+		{ "id": "throw",				"name": "Throw",					"value": 20,		"type": "combat"					},
 		{ "id": "track", 				"name": "Track",					"value": 10												},
 		{ "id": "whip",					"name": "Whip", 					"value": 5,			"type": "fighting"					},
 		{ "id": "zoology",				"name": "Zoology",		 			"value": 1,			"type": "science"					}
 	],
 	"specializations" : {
-		"artCraft": 		{	"name": "Art and Craft",				"value": 5			},
-		"fighting": 		{	"name": "Fighting",						"value": "varies"	},
-		"firearms": 		{	"name": "Firearms", 					"value": "varies"	},
-		"science": 			{	"name": "Science", 						"value": 1			},	
-		"pilot": 			{	"name": "Pilot", 						"value": 1			},	
-		"survival": 		{	"name": "Survival", 					"value": 10			}	
+		"artCraft": 				{	"name": "Art and Craft",			"value": 5			},
+		"fighting": 				{	"name": "Fighting",					"value": "varies"	},
+		"firearms": 				{	"name": "Firearms", 				"value": "varies"	},
+		"science": 					{	"name": "Science", 					"value": 1			},	
+		"pilot": 					{	"name": "Pilot", 					"value": 1			},	
+		"survival": 				{	"name": "Survival", 				"value": 10			}	
 	},
 	"occupations" : {
 		"accountant": {
